@@ -1,0 +1,121 @@
+
+
+/* this ALWAYS GENERATED file contains the IIDs and CLSIDs */
+
+/* link this file in with the server and any clients */
+
+
+ /* File created by MIDL compiler version 7.00.0500 */
+/* at Wed Jun 03 16:26:36 2015
+ */
+/* Compiler settings for .\TinyCAD.idl:
+    Oicf, W1, Zp8, env=Win32 (32b run)
+    protocol : dce , ms_ext, c_ext, robust
+    error checks: stub_data 
+    VC __declspec() decoration level: 
+         __declspec(uuid()), __declspec(selectany), __declspec(novtable)
+         DECLSPEC_UUID(), MIDL_INTERFACE()
+*/
+//@@MIDL_FILE_HEADING(  )
+
+#pragma warning( disable: 4049 )  /* more than 64k source lines */
+
+
+#ifdef __cplusplus
+extern "C"{
+#endif 
+
+
+#include <rpc.h>
+#include <rpcndr.h>
+
+#ifdef _MIDL_USE_GUIDDEF_
+
+#ifndef INITGUID
+#define INITGUID
+#include <guiddef.h>
+#undef INITGUID
+#else
+#include <guiddef.h>
+#endif
+
+#define MIDL_DEFINE_GUID(type,name,l,w1,w2,b1,b2,b3,b4,b5,b6,b7,b8) \
+        DEFINE_GUID(name,l,w1,w2,b1,b2,b3,b4,b5,b6,b7,b8)
+
+#else // !_MIDL_USE_GUIDDEF_
+
+#ifndef __IID_DEFINED__
+#define __IID_DEFINED__
+
+typedef struct _IID
+{
+    unsigned long x;
+    unsigned short s1;
+    unsigned short s2;
+    unsigned char  c[8];
+} IID;
+
+#endif // __IID_DEFINED__
+
+#ifndef CLSID_DEFINED
+#define CLSID_DEFINED
+typedef IID CLSID;
+#endif // CLSID_DEFINED
+
+#define MIDL_DEFINE_GUID(type,name,l,w1,w2,b1,b2,b3,b4,b5,b6,b7,b8) \
+        const type name = {l,w1,w2,{b1,b2,b3,b4,b5,b6,b7,b8}}
+
+#endif !_MIDL_USE_GUIDDEF_
+
+MIDL_DEFINE_GUID(IID, LIBID_TinyCAD,0x90CF4A56,0xE158,0x431A,0xA3,0x8C,0x52,0x6F,0xF7,0x1D,0xCD,0xAD);
+
+
+MIDL_DEFINE_GUID(IID, DIID_ITinyCAD,0xFF8C90A9,0xC1B5,0x4F32,0x9A,0x78,0xD4,0xB5,0xDB,0xC6,0xAF,0x7D);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_CTinyCADDoc,0x2983F10C,0xE6AB,0x4117,0x92,0x4C,0x28,0xB5,0x2D,0x4E,0xDB,0x80);
+
+
+MIDL_DEFINE_GUID(IID, DIID_ITinyCADZoomView,0xA7758C35,0x992B,0x4A45,0xA6,0x1B,0xDB,0xFF,0xDB,0xD3,0x83,0x6B);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_TinyCADZoomView,0x9514A8F8,0x6AC2,0x465F,0x88,0x6E,0xC7,0x10,0x47,0x5D,0x50,0xAA);
+
+
+MIDL_DEFINE_GUID(IID, DIID_ITinyCADDrawEngine,0x2521FC3C,0x70C2,0x4066,0xA7,0xD9,0x8B,0xF5,0xF7,0x80,0x44,0xFB);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_TinyCADDrawEngine,0xE15E7D25,0x0EDB,0x412F,0xB6,0x00,0xD9,0x34,0x6E,0x13,0xA5,0x4C);
+
+
+MIDL_DEFINE_GUID(IID, DIID_ITinyCADCmdInput,0xB31CC072,0x91FE,0x49ED,0x9D,0x28,0x45,0x0D,0x7D,0xEB,0x62,0x4B);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_TinyCADCmdInput,0xF4F73875,0x0E24,0x489E,0x97,0x65,0x0C,0x1C,0x21,0xB2,0x2D,0xC9);
+
+
+MIDL_DEFINE_GUID(IID, DIID_ITinyCADErrorOutput,0xA31C5A0D,0x1923,0x42DD,0xBD,0x75,0xDF,0x36,0xC3,0x12,0x09,0x19);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_TinyCADErrorOutput,0x0FD02C3A,0xF659,0x4906,0x83,0x67,0x9B,0x32,0xE2,0xF0,0xEC,0x9C);
+
+
+MIDL_DEFINE_GUID(IID, DIID_ITinyCADAnimationFrame,0xB501F7A9,0x9765,0x4C33,0xB0,0xC6,0x25,0x2A,0x68,0x8D,0x10,0x0C);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_TinyCADAnimationFrame,0x48A0E6BC,0xDF57,0x4709,0xB4,0x68,0xDE,0x96,0x48,0xA6,0x9C,0x92);
+
+
+MIDL_DEFINE_GUID(IID, DIID_ITinyCADElementsDoc,0xED192CCD,0x6C6C,0x4FC7,0x84,0x61,0x74,0x3B,0xD3,0xAC,0x20,0x46);
+
+
+MIDL_DEFINE_GUID(CLSID, CLSID_TinyCADElementsDoc,0x6CC8DEBA,0x42B1,0x43E6,0xA9,0x05,0xEB,0xAD,0x89,0x14,0xD0,0x3B);
+
+#undef MIDL_DEFINE_GUID
+
+#ifdef __cplusplus
+}
+#endif
+
+
+

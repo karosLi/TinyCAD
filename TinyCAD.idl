@@ -1,0 +1,131 @@
+// TinyCAD.idl : TinyCAD.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(TinyCAD.tlb)。
+
+#include "olectl.h"
+#include "olectl.h"
+#include "olectl.h"
+#include "olectl.h"
+#include "olectl.h"
+#include "olectl.h"
+[ uuid(90CF4A56-E158-431A-A38C-526FF71DCDAD), version(1.0) ]
+library TinyCAD
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CTinyCADDoc 的主调度接口
+	
+	[ uuid(FF8C90A9-C1B5-4F32-9A78-D4B5DBC6AF7D) ]
+	dispinterface ITinyCAD
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CTinyCADDoc 的类信息
+	
+	[ uuid(2983F10C-E6AB-4117-924C-28B52D4EDB80) ]
+	coclass CTinyCADDoc
+	{
+		[default] dispinterface ITinyCAD;
+	};
+	//  TinyCADZoomView 的主调度接口
+		
+	[ uuid(A7758C35-992B-4A45-A61B-DBFFDBD3836B) ]
+	dispinterface ITinyCADZoomView
+	{
+		properties:
+		methods:
+	};
+
+	//  TinyCADZoomView 的类信息
+
+	[ uuid(9514A8F8-6AC2-465F-886E-C710475D50AA) ]
+	coclass TinyCADZoomView
+	{
+		[default] dispinterface ITinyCADZoomView;
+	};
+	//  TinyCADDrawEngine 的主调度接口
+		
+	[ uuid(2521FC3C-70C2-4066-A7D9-8BF5F78044FB) ]
+	dispinterface ITinyCADDrawEngine
+	{
+		properties:
+		methods:
+	};
+
+	//  TinyCADDrawEngine 的类信息
+
+	[ uuid(E15E7D25-0EDB-412F-B600-D9346E13A54C) ]
+	coclass TinyCADDrawEngine
+	{
+		[default] dispinterface ITinyCADDrawEngine;
+	};
+	//  TinyCADCmdInput 的主调度接口
+		
+	[ uuid(B31CC072-91FE-49ED-9D28-450D7DEB624B) ]
+	dispinterface ITinyCADCmdInput
+	{
+		properties:
+		methods:
+	};
+
+	//  TinyCADCmdInput 的类信息
+
+	[ uuid(F4F73875-0E24-489E-9765-0C1C21B22DC9) ]
+	coclass TinyCADCmdInput
+	{
+		[default] dispinterface ITinyCADCmdInput;
+	};
+	//  TinyCADErrorOutput 的主调度接口
+		
+	[ uuid(A31C5A0D-1923-42DD-BD75-DF36C3120919) ]
+	dispinterface ITinyCADErrorOutput
+	{
+		properties:
+		methods:
+	};
+
+	//  TinyCADErrorOutput 的类信息
+
+	[ uuid(0FD02C3A-F659-4906-8367-9B32E2F0EC9C) ]
+	coclass TinyCADErrorOutput
+	{
+		[default] dispinterface ITinyCADErrorOutput;
+	};
+	//  TinyCADAnimationFrame 的主调度接口
+		
+	[ uuid(B501F7A9-9765-4C33-B0C6-252A688D100C) ]
+	dispinterface ITinyCADAnimationFrame
+	{
+		properties:
+		methods:
+	};
+
+	//  TinyCADAnimationFrame 的类信息
+
+	[ uuid(48A0E6BC-DF57-4709-B468-DE9648A69C92) ]
+	coclass TinyCADAnimationFrame
+	{
+		[default] dispinterface ITinyCADAnimationFrame;
+	};
+	//  TinyCADElementsDoc 的主调度接口
+		
+	[ uuid(ED192CCD-6C6C-4FC7-8461-743BD3AC2046) ]
+	dispinterface ITinyCADElementsDoc
+	{
+		properties:
+		methods:
+	};
+
+	//  TinyCADElementsDoc 的类信息
+
+	[ uuid(6CC8DEBA-42B1-43E6-A905-EBAD8914D03B) ]
+	coclass TinyCADElementsDoc
+	{
+		[default] dispinterface ITinyCADElementsDoc;
+	};
+};
